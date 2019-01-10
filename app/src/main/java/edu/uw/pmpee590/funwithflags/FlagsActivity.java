@@ -1,6 +1,7 @@
 package edu.uw.pmpee590.funwithflags;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -18,23 +19,46 @@ public class FlagsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flags);
+        int orientation = this.getResources().getConfiguration().orientation;
 
        FragmentManager manager = getSupportFragmentManager();
         Fragment fragment = manager.findFragmentById(R.id.details);
-        if (fragment == null) {
-            fragment = new FragmentFlag();
-            manager.beginTransaction()
-                    .add(R.id.details, fragment)
-                    .commit();
+
+        if (orientation == Configuration.ORIENTATION_PORTRAIT){
+            if (fragment == null) {
+                fragment = new FragmentFlag();
+                manager.beginTransaction()
+                        .add(R.id.details, fragment)
+                        .hide(fragment)
+                        .commit();
+            }
         }
+        else{
+            if (fragment == null) {
+                fragment = new FragmentFlag();
+                manager.beginTransaction()
+                        .add(R.id.details, fragment)
+                        //.hide(fragment)
+                        .commit();
+            }
+        }
+
     }
 
+
+
+
+
+
     public void flag_clic(View view) {
-        Fragment newContent = null;
-        newContent = new FragmentFlag();
 
+        int orientation = this.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+            // code for portrait mode
+        } else {
+            // code for landscape mode
 
-        id = view.getId();
+       id = view.getId();
         ImageView flag_details = (ImageView) findViewById(R.id.flagView);
 
         switch(id) {
@@ -58,10 +82,7 @@ public class FlagsActivity extends AppCompatActivity {
                 flag_details.setImageResource(R.drawable.germany);
                 break;
         }
-
-
-
-
+        }
 
 
     }
