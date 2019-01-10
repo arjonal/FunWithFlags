@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fun With Flags</string>
+    <string name="country_name_label">Country Name</string>
+    <string name="flag_details_label">Details</string>
+</resources>
