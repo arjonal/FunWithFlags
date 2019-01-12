@@ -15,53 +15,47 @@ import android.widget.ImageView;
 public class FlagsActivity extends AppCompatActivity {
     int id;
     Fragment fragmentObject;
+    public static final String KEY = "MyActivity";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flags);
         int orientation = this.getResources().getConfiguration().orientation;
 
-       FragmentManager manager = getSupportFragmentManager();
-        Fragment fragment = manager.findFragmentById(R.id.details);
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+            // code for portrait mode EMPEZAR SEGUNDA ACTIVIDAD
 
-        if (orientation == Configuration.ORIENTATION_PORTRAIT){
-            if (fragment == null) {
-                fragment = new FragmentFlag();
-                manager.beginTransaction()
-                        .add(R.id.details, fragment)
-                        .hide(fragment)
-                        .commit();
-            }
-        }
-        else{
-            if (fragment == null) {
-                fragment = new FragmentFlag();
-                manager.beginTransaction()
-                        .add(R.id.details, fragment)
-                        //.hide(fragment)
-                        .commit();
-            }
-        }
+        } else {
+            // code for landscape mode
+            FragmentManager manager = getSupportFragmentManager();
+            Fragment fragment = manager.findFragmentById(R.id.details);
 
+            fragment = new FragmentFlag();
+            manager.beginTransaction()
+                    .add(R.id.details, fragment)
+                    //.hide(fragment)
+                    .commit();
+        }
     }
-
-
-
-
 
 
     public void flag_clic(View view) {
 
+        id = view.getId();
+        ImageView flag_details = (ImageView) findViewById(R.id.flagView);
         int orientation = this.getResources().getConfiguration().orientation;
+
         if (orientation == Configuration.ORIENTATION_PORTRAIT) {
-            // code for portrait mode
+            Intent i = new Intent(FlagsActivity.this, DetailsActivity.class);
+            i.putExtra("KEY",id);
+            startActivity(i);
+
         } else {
             // code for landscape mode
 
-       id = view.getId();
-        ImageView flag_details = (ImageView) findViewById(R.id.flagView);
-
-        switch(id) {
+       switch(id) {
             case R.id.flag_france:
                 //2131230912:
                 //Log.v(TAG, "YAKI 1");

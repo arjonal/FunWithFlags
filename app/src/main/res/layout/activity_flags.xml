@@ -1,44 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FlagsActivity">
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/flag_france"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="48dp"
+        android:onClick="flag_clic"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/france" />
+
+    <ImageButton
+        android:id="@+id/flag_italy"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:onClick="flag_clic"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/flag_unitedstates"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_france"
+        app:layout_constraintTop_toTopOf="@+id/flag_france"
+        app:srcCompat="@drawable/italy" />
+
+    <ImageButton
+        android:id="@+id/flag_unitedstates"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="flag_clic"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/flag_italy"
+        app:layout_constraintTop_toTopOf="@+id/flag_italy"
+        app:srcCompat="@drawable/unitedstates" />
+
+    <ImageButton
+        android:id="@+id/flag_germnay"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="48dp"
+        android:onClick="flag_clic"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flag_france"
+        app:srcCompat="@drawable/germany" />
 
 
 </android.support.constraint.ConstraintLayout>
--->
-
-<!--<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragment_container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-
-
-    />-->
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
-
-    <fragment
-        android:id="@+id/flags_index"
-        class="edu.uw.pmpee590.funwithflags.FragmentFlagsdex"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
-
-    <FrameLayout
-        android:id="@+id/details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="?android:attr/detailsElementBackground" />
-
-</LinearLayout>
 
