@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import Utils.Data;
+import edu.uw.pmpee590.funwithflags.util.Data;
 import edu.uw.pmpee590.funwithflags.model.Flags;
 
 public class FlagsActivity extends AppCompatActivity {

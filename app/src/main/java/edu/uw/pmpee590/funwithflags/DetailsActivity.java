@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import Utils.Data;
+import edu.uw.pmpee590.funwithflags.util.Data;
 import edu.uw.pmpee590.funwithflags.model.Flags;
 
 public class DetailsActivity extends AppCompatActivity {
