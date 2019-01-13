@@ -2,7 +2,6 @@ package edu.uw.pmpee590.funwithflags.model;
 
 public class Flags {
 
-
     private int mFlagName; //Will contain the name of the country/flag
     private int mFlagPict;
     private int mFlagDetail;
