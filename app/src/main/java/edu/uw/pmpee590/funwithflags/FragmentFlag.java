@@ -8,12 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class FragmentFlag extends Fragment {
-    private Flags mFlag;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mFlag = new Flags();
     }
 
     @Override

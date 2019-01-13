@@ -1,5 +1,31 @@
 <resources>
     <string name="app_name">Fun With Flags</string>
-    <string name="country_name_label">Country Name</string>
-    <string name="flag_details_label">Details</string>
+
+    <string name="flag_name_unitedstates">UNITED STATES</string>
+    <string name="details_unitedstates">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+
+    <string name="flag_name_germany">GERMANY</string>
+    <string name="details_germany">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+
+    <string name="flag_name_italy">ITALY</string>
+    <string name="details_italy">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+
+    <string name="flag_name_spain">SPAIN</string>
+    <string name="details_spain">The origin of the current flag of Spain is the naval ensign of 1785,
+        Pabellón de la Marina de Guerra under Charles III of Spain. It was chosen by Charles III himself among 12 different flags designed by Antonio Valdés y Bazán (all projected flags were presented in a drawing which is in the Naval Museum of Madrid). .</string>
+
+
+    <string name="flag_name_france">FRANCE</string>
+    <string name="details_france">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+
+    <string name="flag_name_china">CHINA</string>
+    <string name="details_china">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+
+
+    <string name="flag_name_skorea">SOUTH KOREA</string>
+    <string name="details_skorea">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+
+    <string name="flag_name_brazil">BRAZIL</string>
+    <string name="details_brazil">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+
 </resources>

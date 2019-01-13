@@ -7,37 +7,38 @@
 
 
     <TextView
-        android:id="@+id/country_name"
+        android:id="@+id/flag_name_land"
         android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginBottom="28dp"
-        android:text="Country Name"
-        app:layout_constraintBottom_toTopOf="@+id/flagView"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.267"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/flagView"
-        android:layout_width="78dp"
-        android:layout_height="105dp"
-        android:layout_marginTop="68dp"
+        android:id="@+id/flag_pic_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:color/transparent" />
+        app:layout_constraintVertical_bias="0.0" />
     />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginTop="28dp"
-        android:text="Description"
-        android:textSize="24sp"
+        android:id="@+id/flag_descrip_land"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flagView" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

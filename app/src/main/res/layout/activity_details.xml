@@ -7,46 +7,50 @@
 
 
     <TextView
-        android:id="@+id/country_name"
+        android:id="@+id/flag_name_port"
         android:layout_width="wrap_content"
-        android:layout_height="22dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="28dp"
         android:text="Country Name"
-        app:layout_constraintBottom_toTopOf="@+id/flagView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/flag_pic_land"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.58000004" />
 
     <ImageView
-        android:id="@+id/flagView"
-        android:layout_width="78dp"
-        android:layout_height="105dp"
+        android:id="@+id/flag_pic_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/flag_descrip_port"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:color/transparent" />
     />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="32dp"
-        android:text="Description"
-        android:textSize="24sp"
+        android:id="@+id/flag_descrip_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flagView" />
+        app:layout_constraintTop_toBottomOf="@+id/flag_pic_land" />
 </android.support.constraint.ConstraintLayout>
