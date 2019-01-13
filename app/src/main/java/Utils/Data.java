@@ -5,23 +5,21 @@ import edu.uw.pmpee590.funwithflags.model.Flags;
 
 public class Data {
 
-
     public Flags[]  createFlags(){
+        Flags[] mFlagsBank = new Flags[] {
+                    new Flags (R.drawable.unitedstates, R.string.flag_name_unitedstates,  R.string.details_unitedstates),
+                    new Flags (R.drawable.germany, R.string.flag_name_germany,  R.string.details_germany),
+                    new Flags (R.drawable.italy, R.string.flag_name_italy,  R.string.details_italy),
+                    new Flags (R.drawable.spain, R.string.flag_name_spain,  R.string.details_spain)
+        };
 
-    Flags[] mFlagsBank = new Flags[] {
-                new Flags (R.drawable.unitedstates, R.string.flag_name_unitedstates,  R.string.details_unitedstates),
-                new Flags (R.drawable.germany, R.string.flag_name_germany,  R.string.details_germany),
-                new Flags (R.drawable.italy, R.string.flag_name_italy,  R.string.details_italy),
-                new Flags (R.drawable.spain, R.string.flag_name_spain,  R.string.details_spain)
-    };
-
-    return mFlagsBank;
+        return mFlagsBank;
 
     }
 
-    public int returnFlagIndex (int FlagresourceID){
+    public int returnFlagIndex (int FlagResourceID){
         int mIndex = 0;
-        switch(FlagresourceID) {
+        switch(FlagResourceID) {
             case R.id.flag_unitedstates:
                 mIndex = 0;
                 break;
