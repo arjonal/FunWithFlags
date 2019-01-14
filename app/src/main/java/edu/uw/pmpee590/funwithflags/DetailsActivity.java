@@ -3,6 +3,7 @@ package edu.uw.pmpee590.funwithflags;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,29 @@ public class DetailsActivity extends AppCompatActivity {
     Data mData = new Data();
     Flags[] mFlagsBank = mData.createFlags();
 
+    private static final String TAG = "DetailsActivity";
+
+
+    @Override    public void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart() called");
+    }
+    @Override    public void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume() called");
+    }
+    @Override    public void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause() called");
+    }
+    @Override    public void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop() called");
+    }
+    @Override    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy() called");
+    }
 
     public void update_flag(int index){
 

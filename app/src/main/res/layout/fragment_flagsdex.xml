@@ -1,67 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/flag_spain"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="76dp"
-        android:onClick="flag_clic"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/flag_germnay"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/flag_unitedstates"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/spain" />
-
-    <ImageButton
-        android:id="@+id/flag_unitedstates"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="76dp"
-        android:onClick="flag_clic"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/flag_spain"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/flag_italy"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/unitedstates" />
-
-    <ImageButton
-        android:id="@+id/flag_germnay"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="76dp"
-        android:onClick="flag_clic"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/flag_spain"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/germany" />
-
-    <ImageButton
-        android:id="@+id/flag_italy"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="76dp"
-        android:onClick="flag_clic"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/flag_unitedstates"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/italy" />
-
-    <android.support.constraint.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top" />
-
+    <include layout="@layout/flags_grid"/>
 
 </android.support.constraint.ConstraintLayout>

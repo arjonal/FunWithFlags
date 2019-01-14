@@ -1,0 +1,79 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/flag_spain"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:onClick="flag_clic"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/flag_germnay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_unitedstates"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spain" />
+
+    <ImageButton
+        android:id="@+id/flag_unitedstates"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:onClick="flag_clic"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/flag_spain"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_italy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unitedstates" />
+
+    <ImageButton
+        android:id="@+id/flag_germnay"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:onClick="flag_clic"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_spain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/germany" />
+
+    <ImageButton
+        android:id="@+id/flag_italy"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:onClick="flag_clic"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/flag_unitedstates"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/italy" />
+
+    <ImageButton
+        android:id="@+id/flag_griffindor"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flag_italy"
+        app:srcCompat="@drawable/griffindor" />
+
+    <ImageButton
+        android:id="@+id/flag_stark"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/flag_griffindor"
+        app:layout_constraintTop_toBottomOf="@+id/flag_unitedstates"
+        app:srcCompat="@drawable/stark" />
+
+
+</merge>
